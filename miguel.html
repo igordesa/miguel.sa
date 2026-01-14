@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartão Médico – Miguel Brandt Arrais de Sá</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    width: 390px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+  }
+  .flags { text-align:center; margin-bottom:15px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+  .flags button {
+    font-size:26px;
+    margin:0 8px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    transition: transform 0.2s;
+  }
+  .flags button:hover { transform: scale(1.2); }
+  
+  .sunflower { text-align:center; font-size:50px; margin-bottom: 10px; }
+  h1 { text-align:center; font-size:22px; margin:10px 0; color: #333; }
+  h2 { text-align:center; font-size:14px; color:#666; margin-bottom:20px; text-transform: uppercase; letter-spacing: 0.5px; }
+  
+  .blood-type { 
+    text-align: center; 
+    font-weight: bold; 
+    color: #d9534f; 
+    font-size: 18px; 
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #d9534f;
+    border-radius: 8px;
+  }
+
+  .section { font-size:13px; margin-bottom:10px; line-height:1.4; color: #444; }
+  .section strong { color: #000; }
+  
+  .alert {
+    background:#fff3f3;
+    border-left:5px solid #d9534f;
+    padding:12px;
+    border-radius:10px;
+    font-size:13px;
+    margin-bottom:15px;
+  }
+  .alert strong { display:block; margin-bottom:4px; color: #d9534f; }
+  
+  .lang { display:none; }
+  .lang.active { display:block; }
+  
+  a { color:#0066cc; text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+  .divider { height: 1px; background: #eee; margin: 15px 0; }
+</style>
+
+<script>
+function showLang(id) {
+  document.querySelectorAll('.lang').forEach(l => l.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</head>
+
+<body>
+<div class="card">
+
+<div class="flags">
+  <button onclick="showLang('pt')" title="Português">🇧🇷</button>
+  <button onclick="showLang('en')" title="English">🇬🇧</button>
+  <button onclick="showLang('es')" title="Español">🇪🇸</button>
+  <button onclick="showLang('it')" title="Italiano">🇮🇹</button>
+  <button onclick="showLang('fr')" title="Français">🇫🇷</button>
+</div>
+
+<div class="sunflower">🌻</div>
+<h1>Miguel Brandt Arrais de Sá</h1>
+
+<div id="pt" class="lang active">
+  <h2>Cartão Médico Digital – Deficiência Invisível</h2>
+  <div class="blood-type">Tipo Sanguíneo: O+</div>
+  
+  <div class="section">Eu tenho uma deficiência invisível e posso precisar de alguma assistência, cuidado ou simplesmente de um pouco mais de tempo.</div>
+  
+  <div class="alert">
+    <strong>⚠️ ALERTA MÉDICO</strong>
+    • <strong>Cardiopata</strong>: Operado de estenose supravalvar aórtica e pulmonar.<br>
+    • Evitar <strong>Sevoflurano</strong>. Em caso de anestesia, solicitar <strong>UTI</strong>.<br>
+    <a href="https://conectivaorg.wordpress.com/wp-content/uploads/2023/11/protocolo_emergencias_sw-pt_br.pdf" target="_blank">Protocolo de Emergência (SW)</a>
+  </div>
+
+  <div class="section"><strong>Síndrome Genética:</strong> Síndrome de Williams</div>
+  <div class="section"><strong>CID-10:</strong> Q93.8 | Q87.5 | I35.0 | F78 | F71.1</div>
+  <div class="section"><strong>Medicamentos:</strong> Risperidona (0,25 ml ao dia)</div>
+  
+  <div class="divider"></div>
+  <div class="section"><strong>Plano de Saúde:</strong> ASSEFAZ</div>
+  <div class="section"><strong>Hospital Ref. Cardiológica (Recife):</strong> Hospital Português</div>
+  <div class="section"><strong>Hospital demais Emergências:</strong> Hospital Esperança (Rede D'Or)</div>
+
+  <div class="divider"></div>
+  <div class="section"><strong>Nascimento:</strong> 22/07/2020 | <strong>Nacionalidade:</strong> Brasil</div>
+  <div class="section"><strong>CPF:</strong> 172.774.704-60 | <strong>Passaporte:</strong> GM233408</div>
+  <div class="section"><strong>RG:</strong> 11.720.742 SDS-PE</div>
+  <div class="divider"></div>
+  <div class="section"><strong>Responsáveis:</strong><br>Igor Arrais de Sá (Pai)<br>Fabiola Albuquerque Brandt Arrais de Sá (Mãe)</div>
+  <div class="section"><strong>Contatos de Emergência (Ligação e WhatsApp):</strong><br>+55 81 99431-9971<br>+55 61 98327-0120</div>
+</div>
+
+<div id="en" class="lang">
+  <h2>Digital Medical Card – Invisible Disability</h2>
+  <div class="blood-type">Blood Type: O+</div>
+
+  <div class="section">I have an invisible disability and may require some assistance, care, or simply more time.</div>
+  
+  <div class="alert">
+    <strong>⚠️ MEDICAL ALERT</strong>
+    • <strong>Heart Patient</strong>: Operated on for supravalvular aortic and pulmonary stenosis.<br>
+    • Avoid <strong>Sevoflurane</strong>. In case of anesthesia, an <strong>ICU</strong> bed must be requested.<br>
+    <a href="https://conectivaorg.wordpress.com/wp-content/uploads/2023/11/protocolo_emergencias_sw-pt_br.pdf" target="_blank">Emergency Protocol (WS)</a>
+  </div>
+
+  <div class="section"><strong>Genetic Condition:</strong> Williams Syndrome</div>
+  <div class="section"><strong>ICD-10:</strong> Q93.8 | Q87.5 | I35.0 | F78 | F71.1</div>
+  <div class="section"><strong>Medication:</strong> Risperidone (0.25 ml daily)</div>
+
+  <div class="divider"></div>
+  <div class="section"><strong>DOB:</strong> 07/22/2020 | <strong>Nationality:</strong> Brazil</div>
+  <div class="section"><strong>Passport:</strong> GM233408</div>
+  <div class="divider"></div>
+  <div class="section"><strong>Parents/Guardians:</strong><br>Igor Arrais de Sá (Father)<br>Fabiola A. Brandt Arrais de Sá (Mother)</div>
+  <div class="section"><strong>Emergency Contacts (Calls & WhatsApp):</strong><br>+55 81 99431-9971<br>+55 61 98327-0120</div>
+</div>
+
+<div id="es" class="lang">
+  <h2>Tarjeta Médica Digital – Discapacidad Invisible</h2>
+  <div class="blood-type">Grupo Sanguíneo: O+</div>
+
+  <div class="section">Tengo una discapacidad invisible y puedo necesitar asistencia, cuidado o simplemente un poco más de tiempo.</div>
+  
+  <div class="alert">
+    <strong>⚠️ ALERTA MÉDICA</strong>
+    • <strong>Cardiópata</strong>: Operado de estenosis supravalvular aórtica y pulmonar.<br>
+    • Evitar <strong>Sevoflurano</strong>. En caso de anestesia, solicitar <strong>UCI</strong>.<br>
+    <a href="https://conectivaorg.wordpress.com/wp-content/uploads/2023/11/protocolo_emergencias_sw-pt_br.pdf" target="_blank">Protocolo de Emergencia (SW)</a>
+  </div>
+
+  <div class="section"><strong>Síndrome Genético:</strong> Síndrome de Williams</div>
+  <div class="section"><strong>CIE-10:</strong> Q93.8 | Q87.5 | I35.0 | F78 | F71.1</div>
+  <div class="section"><strong>Medicamentos:</strong> Risperidona (0,25 ml al día)</div>
+
+  <div class="divider"></div>
+  <div class="section"><strong>Nacimiento:</strong> 22/07/2020 | <strong>Nacionalidad:</strong> Brasil</div>
+  <div class="section"><strong>Pasaporte:</strong> GM233408</div>
+  <div class="divider"></div>
+  <div class="section"><strong>Padres/Tutores:</strong><br>Igor Arrais de Sá (Padre)<br>Fabiola A. Brandt Arrais de Sá (Madre)</div>
+  <div class="section"><strong>Contactos de Emergencia (Llamadas y WhatsApp):</strong><br>+55 81 99431-9971<br>+55 61 98327-0120</div>
+</div>
+
+<div id="it" class="lang">
+  <h2>Carta Medica Digitale – Disabilità Invisibile</h2>
+  <div class="blood-type">Gruppo Sanguigno: O+</div>
+
+  <div class="section">Ho uma disabilità invisibile e potrei aver bisogno di assistenza, cura o semplicemente di più tempo.</div>
+  
+  <div class="alert">
+    <strong>⚠️ ALLERTA MEDICA</strong>
+    • <strong>Cardiopatico</strong>: Già operato per stenosi sopravalvolare aortica e polmonare.<br>
+    • Evitare <strong>Sevoflurano</strong>. In caso di anestesia, richiedere <strong>Terapia Intensiva (UCI)</strong>.<br>
+    <a href="https://conectivaorg.wordpress.com/wp-content/uploads/2023/11/protocolo_emergencias_sw-pt_br.pdf" target="_blank">Protocollo di Emergenza (SW)</a>
+  </div>
+
+  <div class="section"><strong>Sindrome Genetica:</strong> Sindrome di Williams</div>
+  <div class="section"><strong>ICD-10:</strong> Q93.8 | Q87.5 | I35.0 | F78 | F71.1</div>
+  <div class="section"><strong>Farmaci:</strong> Risperidone (0,25 ml al giorno)</div>
+
+  <div class="divider"></div>
+  <div class="section"><strong>Data di nascita:</strong> 22/07/2020 | <strong>Nazionalità:</strong> Brasile</div>
+  <div class="section"><strong>Passaporto:</strong> GM233408</div>
+  <div class="divider"></div>
+  <div class="section"><strong>Genitori/Tutori:</strong><br>Igor Arrais de Sá (Padre)<br>Fabiola A. Brandt Arrais de Sá (Madre)</div>
+  <div class="section"><strong>Contatti di Emergenza (Chiamate e WhatsApp):</strong><br>+55 81 99431-9971<br>+55 61 98327-0120</div>
+</div>
+
+<div id="fr" class="lang">
+  <h2>Carte Médicale Digitale – Handicap Invisible</h2>
+  <div class="blood-type">Groupe Sanguin : O+</div>
+
+  <div class="section">J'ai un handicap invisible et je peux avoir besoin d'assistance, de soins ou simplement d'un peu plus de temps.</div>
+  
+  <div class="alert">
+    <strong>⚠️ ALERTE MÉDICALE</strong>
+    • <strong>Cardiopathe</strong> : Opéré d'une sténose supravalvulaire aortique et pulmonaire.<br>
+    • Éviter le <strong>Sévoflurane</strong>. En cas d'anesthésie, demander une <strong>Unité de Soins Intensifs (USI)</strong>.<br>
+    <a href="https://conectivaorg.wordpress.com/wp-content/uploads/2023/11/protocolo_emergencias_sw-pt_br.pdf" target="_blank">Protocole d'urgence (SW)</a>
+  </div>
+
+  <div class="section"><strong>Syndrome Génétique:</strong> Syndrome de Williams</div>
+  <div class="section"><strong>CIM-10:</strong> Q93.8 | Q87.5 | I35.0 | F78 | F71.1</div>
+  <div class="section"><strong>Médicaments:</strong> Rispéridone (0,25 ml par jour)</div>
+
+  <div class="divider"></div>
+  <div class="section"><strong>Né le:</strong> 22/07/2020 | <strong>Nationalité:</strong> Brésil</div>
+  <div class="section"><strong>Passeport:</strong> GM233408</div>
+  <div class="divider"></div>
+  <div class="section"><strong>Parents/Responsables:</strong><br>Igor Arrais de Sá (Père)<br>Fabiola A. Brandt Arrais de Sá (Mère)</div>
+  <div class="section"><strong>Contacts d'Urgence (Appels et WhatsApp):</strong><br>+55 81 99431-9971<br>+55 61 98327-0120</div>
+</div>
+
+</div>
+</body>
+</html>
